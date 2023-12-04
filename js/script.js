@@ -24,3 +24,10 @@ function videoConAnimation() {
     })
 }
 videoConAnimation();
+
+gsap.from("#page1 h1", {
+    y: 100,
+    opacity: 0,
+    duration: 0.5,
+    stagger: 0.2
+})
