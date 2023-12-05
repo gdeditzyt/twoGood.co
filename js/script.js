@@ -25,9 +25,17 @@ function videoConAnimation() {
 }
 videoConAnimation();
 
-gsap.from("#page1 h1", {
-    y: 100,
-    opacity: 0,
-    duration: 0.5,
-    stagger: 0.2
-})
+function loadingAnimation() {
+    gsap.from("#page1 h1", {
+        y: 100,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.2,
+    });
+    gsap.from("#page1 #video-container", {
+        opacity: 0,
+        duration: 0.5,
+        delay: 0.6,
+    });
+}
+loadingAnimation();
